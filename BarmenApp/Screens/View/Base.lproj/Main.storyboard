@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XJM-8A-mVK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="vmm-sC-8UZ">
+            <objects>
+                <tableViewController id="cxR-MF-M87" customClass="CocktailsTableViewController" customModule="BarmenApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="WOh-dM-ZXx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CocktailCell" rowHeight="146" id="bWa-RJ-5VL" customClass="CocktailTableViewCell" customModule="BarmenApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="146"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bWa-RJ-5VL" id="Zfn-UZ-FyO">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="02h-sA-U2P">
+                                            <rect key="frame" x="20" y="11" width="120" height="124"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="124" id="3Lh-Gr-4Nz"/>
+                                                <constraint firstAttribute="width" constant="120" id="oXt-lO-uDO"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cocktail Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoT-IL-LBi">
+                                            <rect key="frame" x="148" y="11" width="246" height="20"/>
+                                            <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="D2F-6u-7RT"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="16"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alcoholic" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atF-dQ-7sU">
+                                            <rect key="frame" x="245" y="75" width="149" height="27"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="27" id="Jlm-H6-Wf5"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkB-TL-NwD">
+                                            <rect key="frame" x="245" y="39" width="149" height="28"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="28" id="AuP-UY-27e"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category :" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xp6-mk-i8c">
+                                            <rect key="frame" x="148" y="39" width="89" height="28"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="28" id="KHh-hr-lMd"/>
+                                                <constraint firstAttribute="width" constant="89" id="Lox-Kn-vVK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Non/Alcoholic:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofy-zb-tQy">
+                                            <rect key="frame" x="148" y="75" width="89" height="28"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="28" id="ohP-Rb-GYh"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    <constraints>
+                                        <constraint firstItem="atF-dQ-7sU" firstAttribute="top" secondItem="gkB-TL-NwD" secondAttribute="bottom" constant="8" symbolic="YES" id="0JR-OP-1wo"/>
+                                        <constraint firstItem="UoT-IL-LBi" firstAttribute="top" secondItem="Zfn-UZ-FyO" secondAttribute="topMargin" id="1Qs-ee-DL7"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ofy-zb-tQy" secondAttribute="bottom" constant="32" id="4BF-BO-oXC"/>
+                                        <constraint firstItem="gkB-TL-NwD" firstAttribute="top" secondItem="UoT-IL-LBi" secondAttribute="bottom" constant="8" symbolic="YES" id="6pt-Gl-40b"/>
+                                        <constraint firstItem="ofy-zb-tQy" firstAttribute="top" secondItem="Xp6-mk-i8c" secondAttribute="bottom" constant="8" symbolic="YES" id="9G6-1v-r0k"/>
+                                        <constraint firstItem="gkB-TL-NwD" firstAttribute="trailing" secondItem="Zfn-UZ-FyO" secondAttribute="trailingMargin" id="HMR-X1-K6l"/>
+                                        <constraint firstItem="atF-dQ-7sU" firstAttribute="top" secondItem="gkB-TL-NwD" secondAttribute="bottom" constant="8" symbolic="YES" id="HVj-Vv-keE"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="atF-dQ-7sU" secondAttribute="bottom" constant="33" id="Ilh-xH-tDp"/>
+                                        <constraint firstItem="gkB-TL-NwD" firstAttribute="leading" secondItem="atF-dQ-7sU" secondAttribute="leading" id="Jj9-M5-4cb"/>
+                                        <constraint firstItem="ofy-zb-tQy" firstAttribute="leading" secondItem="02h-sA-U2P" secondAttribute="trailing" constant="8" symbolic="YES" id="PFl-D1-ReT"/>
+                                        <constraint firstItem="Xp6-mk-i8c" firstAttribute="leading" secondItem="02h-sA-U2P" secondAttribute="trailing" constant="8" symbolic="YES" id="Q1g-nk-HqT"/>
+                                        <constraint firstItem="02h-sA-U2P" firstAttribute="top" secondItem="Zfn-UZ-FyO" secondAttribute="topMargin" id="SD1-0a-hv0"/>
+                                        <constraint firstItem="UoT-IL-LBi" firstAttribute="leading" secondItem="02h-sA-U2P" secondAttribute="trailing" constant="8" symbolic="YES" id="aTw-5s-Iah"/>
+                                        <constraint firstItem="gkB-TL-NwD" firstAttribute="leading" secondItem="Xp6-mk-i8c" secondAttribute="trailing" constant="8" symbolic="YES" id="bbl-UJ-k6R"/>
+                                        <constraint firstItem="atF-dQ-7sU" firstAttribute="leading" secondItem="ofy-zb-tQy" secondAttribute="trailing" constant="8" symbolic="YES" id="caf-eO-gqA"/>
+                                        <constraint firstItem="UoT-IL-LBi" firstAttribute="leading" secondItem="02h-sA-U2P" secondAttribute="trailing" constant="8" symbolic="YES" id="dbv-Wg-IBP"/>
+                                        <constraint firstItem="Xp6-mk-i8c" firstAttribute="top" secondItem="UoT-IL-LBi" secondAttribute="bottom" constant="8" symbolic="YES" id="eEk-03-MKd"/>
+                                        <constraint firstItem="atF-dQ-7sU" firstAttribute="trailing" secondItem="Zfn-UZ-FyO" secondAttribute="trailingMargin" id="eO8-eP-9zx"/>
+                                        <constraint firstItem="atF-dQ-7sU" firstAttribute="leading" secondItem="ofy-zb-tQy" secondAttribute="trailing" constant="8" symbolic="YES" id="l0G-tm-4PX"/>
+                                        <constraint firstItem="gkB-TL-NwD" firstAttribute="leading" secondItem="Xp6-mk-i8c" secondAttribute="trailing" constant="8" symbolic="YES" id="q7W-Oi-edS"/>
+                                        <constraint firstItem="ofy-zb-tQy" firstAttribute="top" secondItem="Xp6-mk-i8c" secondAttribute="bottom" constant="8" symbolic="YES" id="scR-XB-cIg"/>
+                                        <constraint firstItem="UoT-IL-LBi" firstAttribute="trailing" secondItem="Zfn-UZ-FyO" secondAttribute="trailingMargin" id="t2i-Wa-nno"/>
+                                        <constraint firstItem="02h-sA-U2P" firstAttribute="leading" secondItem="Zfn-UZ-FyO" secondAttribute="leadingMargin" id="vZU-U9-3lv"/>
+                                        <constraint firstItem="02h-sA-U2P" firstAttribute="bottom" secondItem="Zfn-UZ-FyO" secondAttribute="bottomMargin" id="vyK-xO-CSr"/>
+                                        <constraint firstItem="gkB-TL-NwD" firstAttribute="top" secondItem="UoT-IL-LBi" secondAttribute="bottom" constant="8" symbolic="YES" id="wJy-yT-2uH"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="alcoholicLabel" destination="atF-dQ-7sU" id="7Xp-gD-7vm"/>
+                                    <outlet property="categoryLabel" destination="gkB-TL-NwD" id="1hT-Fv-XYK"/>
+                                    <outlet property="cocktailImageView" destination="02h-sA-U2P" id="QOA-wt-h0A"/>
+                                    <outlet property="coctailNameLabel" destination="UoT-IL-LBi" id="tEo-J8-VWJ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cxR-MF-M87" id="PDA-hc-iZB"/>
+                            <outlet property="delegate" destination="cxR-MF-M87" id="n1a-D9-uFv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="EG0-3Q-pAF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ti7-Gn-s0u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="373.91304347826087" y="0.6696428571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dua-dD-BTC">
+            <objects>
+                <navigationController id="XJM-8A-mVK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nhf-B2-H9y">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cxR-MF-M87" kind="relationship" relationship="rootViewController" id="h6t-c6-btL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8uY-dW-g2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-517" y="1"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
