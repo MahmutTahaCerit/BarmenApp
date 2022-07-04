@@ -15,6 +15,7 @@ class CocktailTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         cocktailImageView.backgroundColor = .lightGray
         // Initialization code
     }

@@ -16,9 +16,10 @@ class CocktailsTableViewController: UITableViewController, UISearchResultsUpdati
                 }
             }
         }
-
+    private var selectedTitle: Drinks?
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Cocktails"
         fetchData()
         setupSearchController()
     }
@@ -69,10 +70,18 @@ class CocktailsTableViewController: UITableViewController, UISearchResultsUpdati
             cell.cocktailImageView.image = UIImage(data: data)
         }
         // Configure the cell...
-        print(drinks)
         return cell
     }
-    // MARK: - SearchControll
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedTitle = responseFetch?.drinks?[indexPath.row]
+        performSegue(withIdentifier: "toDetailsVC", sender: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? DetailsViewController {
+            viewController.drinks = selectedTitle
+        }
+    }
+    // MARK: - SearchController
     private func setupSearchController() {
         let search = UISearchController(searchResultsController: nil)
         search.searchResultsUpdater = self
